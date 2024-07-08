@@ -1,0 +1,22 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:19092,localhost:29092,localhost:39092
+      group-id: otp_group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nhopuyen1311@gmail.com
+    password: apehofqxjuxxihcc
+    default-encoding: UTF-8
+    protocol: smtp
+
+firebase:
+  properties: firebase-prop.json
+
+server:
+  port: 8888
