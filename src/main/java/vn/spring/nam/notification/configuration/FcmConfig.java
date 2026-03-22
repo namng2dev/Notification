@@ -103,11 +103,16 @@ public class FcmConfig {
         return abc.toString();
     }
 
+
+    public void namND3(String abc) {
+        System.out.println("GHJKLM" + abc);
+    }
+
     public void namND33(String abc) {
         System.out.println("DEF" + abc);
     }
 
     public void namND345(String abc) {
-        System.out.println("GHJKLM" + abc);
+        System.out.println("GHJKLM123123123" + abc);
     }
 }
