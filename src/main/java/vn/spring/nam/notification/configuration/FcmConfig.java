@@ -40,8 +40,19 @@ public class FcmConfig {
 //        return FirebaseMessaging.getInstance(firebaseApp);
 //    }
 
+    public String namND345345(String abc){
+        System.out.println("ABC" + abc);
+        return abc;
+    }
+
     @Bean
     public FirebaseMessaging firebaseApp ()  throws IOException {
+
+
+
+
+
+        /// 9qop7w4etyi1uwyterfgdjutyasfdyuikafsdasd
 
         InputStream serviceAccount  = getClass().getClassLoader().getResourceAsStream("firebase-prop.json" );
 
@@ -82,4 +93,6 @@ public class FcmConfig {
         System.out.println("ABC" + abc);
         return abc;
     }
+
+
 }
