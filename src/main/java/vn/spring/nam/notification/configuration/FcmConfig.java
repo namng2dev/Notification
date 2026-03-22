@@ -41,19 +41,19 @@ public class FcmConfig {
 //    }
 
     @Bean
-    public FirebaseMessaging firebaseApp ()  throws IOException {
+    public FirebaseMessaging firebaseApp() throws IOException {
 
-        InputStream serviceAccount  = getClass().getClassLoader().getResourceAsStream("firebase-prop.json" );
+        InputStream serviceAccount = getClass().getClassLoader().getResourceAsStream("firebase-prop.json");
 
-        if (serviceAccount == null ) {
-            throw  new  IllegalArgumentException ( "Không tìm thấy tệp tài khoản dịch vụ trong tài nguyên" );
+        if (serviceAccount == null) {
+            throw new IllegalArgumentException("Không tìm thấy tệp tài khoản dịch vụ trong tài nguyên");
         }
 
-        FirebaseOptions  options  = FirebaseOptions.builder()
+        FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                 .build();
 
-        FirebaseApp  app  = FirebaseApp.initializeApp(options);
+        FirebaseApp app = FirebaseApp.initializeApp(options);
 
         return FirebaseMessaging.getInstance(app);
     }
@@ -77,9 +77,17 @@ public class FcmConfig {
      *
      * QPISTGEKAJSGDKAJHSGD
      */
-
-    public String namND(String abc){
+    public String namND(String abc) {
         System.out.println("ABC" + abc);
         return abc;
+    }
+
+    public List<String> namND2(String abc) {
+        System.out.println("ABC" + abc);
+        return List.of(abc);
+    }
+
+    public void namND3(String abc) {
+        System.out.println("DEF" + abc);
     }
 }
