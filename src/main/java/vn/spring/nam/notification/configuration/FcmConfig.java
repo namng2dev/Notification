@@ -8,13 +8,17 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Configuration
 public class FcmConfig {
     @Value("${firebase.properties}")
     private String FIREBASE_PROPERTIES;
+
+    private String dragonBall;
 //    @Bean
 //    public GoogleCredentials googleCredentials() {
 //        try {
@@ -52,5 +56,30 @@ public class FcmConfig {
         FirebaseApp  app  = FirebaseApp.initializeApp(options);
 
         return FirebaseMessaging.getInstance(app);
+    }
+
+    /// Nam nd1p280371o29i3tyiasgdoiasgdiu
+    /*
+     * nam test git NAIQSGDLIASGDKLJHAGSDLGASD
+     * PQWIOUETGOAISUDGDASIOYUGASDX
+     * ASDFIPUGASD UGASDXCOLHFGASDLHJKGASDHJKLGASDKLUGHJASDGHJKLasd ghjklasd ghjkleAS HJKLGASDGUASDDGJKL
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     * Q0WOP978E4TYQWOUIYTEDJKQSYRFDKAJYSZFGDKJYASFGDKJYAFSDKUYASFDO76QW
+     *
+     *
+     *
+     *
+     * QPISTGEKAJSGDKAJHSGD
+     */
+
+    public String namND(String abc){
+        System.out.println("ABC" + abc);
+        return abc;
     }
 }
