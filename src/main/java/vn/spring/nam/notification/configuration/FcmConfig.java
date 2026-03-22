@@ -94,5 +94,11 @@ public class FcmConfig {
         return abc;
     }
 
+    public String namND19287361239(Integer abc){
+        System.out.println("ABC" + abc);
+
+        return abc.toString();
+    }
+
 
 }
